@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Uploading.UploadFileActivity">
+
+    <EditText
+        android:id="@+id/edit_file"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="center"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:background="@drawable/background_editteaxt"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:hint="@string/pres_here_to_get_your_file" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/upload_file"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:background="@drawable/background_editteaxt"
+        android:textAllCaps="false"
+        android:id="@+id/btn_upload_file"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="normal" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Retrive File"
+        android:background="@drawable/background_editteaxt"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:id="@+id/btn_retrive_file"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="normal"
+
+        />
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/TitleNote_delete_update"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/background_editteaxt"
+        android:hint="Title Note"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ContentNote_delete_update"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/background_editteaxt"
+        android:padding="@dimen/_10sdp"
+        android:hint="Title Note"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_delete_note"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_25sdp"
+            android:backgroundTint="#E31717"
+            android:text="@string/delete"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp" />
+
+        <Space
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="wrap_content"
+
+            />
+        <Button
+            android:id="@+id/btn_Update_note"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_25sdp"
+            android:backgroundTint="#2196F3"
+            android:text="@string/update"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"
+
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

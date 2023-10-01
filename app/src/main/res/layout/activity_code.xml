@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBackground"
+    tools:context=".UITeacher.CodeActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:includeFontPadding="false"
+        android:gravity="center"
+        android:text="@string/enter_the_code_consisting_of_9_numbers"
+        android:textColor="@color/txt_font"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintBottom_toTopOf="@+id/inputcode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/inputcode"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginBottom="79dp"
+        android:background="@drawable/background_editteaxt"
+        android:hint="@string/enter_your_code"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="no"
+        android:includeFontPadding="false"
+        android:maxLength="5"
+        android:textColor="@color/black"
+        android:inputType="numberSigned"
+        android:gravity="center"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSignin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignin"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginBottom="292dp"
+        android:background="@drawable/background_editteaxt"
+        android:includeFontPadding="false"
+        android:text="@string/pay_20"
+        android:textColor="@color/text_buttons"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progresscodego"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="116dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/btnSigningo"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnSignin" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSigningo"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginBottom="176dp"
+        android:background="@drawable/background_editteaxt"
+        android:includeFontPadding="false"
+        android:text="Go"
+        android:textColor="@color/text_buttons"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

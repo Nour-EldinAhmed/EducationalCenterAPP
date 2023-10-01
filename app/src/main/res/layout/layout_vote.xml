@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/edit_vote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_65sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="@string/enter_your_vote"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_title"  />
+
+    <Button
+        android:id="@+id/btn_add_Vote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_gravity="center"
+        android:textColor="@color/text_buttons"
+        android:textSize="@dimen/_15ssp"
+        android:layout_marginBottom="@dimen/_13sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_note"
+        app:layout_constraintVertical_bias="0.319" />
+</LinearLayout>
